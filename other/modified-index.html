@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+    <title>My App</title>
+    <style>
+        .search-box {
+            width:80%;
+            height:85px;
+            float:right;
+            background-color: #A12A1E;
+            color:White;
+            margin:0 auto;
+        }
+
+        .search-box > div {
+            margin:0 auto;
+            width:365px;
+            margin-top:20px;
+        }
+        input[type="text"] {
+            margin:10px auto;
+        }
+        #posts-list {
+            list-style: none;
+            margin: 0;
+            padding:0;
+        }
+        #posts-list footer {
+            left: 10px;
+            position: absolute;
+            top: 0.5em;
+            width: 150px;
+        }
+        #posts-list .headerentry {
+            padding-left: 165px;
+            position: relative;
+        }
+        .headerentry {
+            border-bottom: 1px solid #eee;
+        }
+        .content {
+            background: #fff;
+            overflow: hidden;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+        }
+        .thumbnail {
+            display: block;
+            padding: 4px;
+            position: relative;
+            margin-bottom: 20px;
+            line-height: 1.42857143;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            -webkit-transition: border .2s ease-in-out;
+            -o-transition: border .2s ease-in-out;
+            transition: border .2s ease-in-out;
+        }
+        .notification {
+            background: #606061;
+            color: #FFFFFF;
+            line-height: 25px;
+            position: absolute;
+            right: 0px;
+            text-align: center;
+            top: 0px;
+            width: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            -moz-box-shadow: 1px 1px 3px #000;
+            -webkit-box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 3px #000;
+        }
+    </style>
+</head>
+<body style="width:800px;height:640px;margin:auto;border:3px solid darkseagreen;background-color: lightgrey;">
+<header style="height:85px;background-color: palegreen">
+    <div style="width:20%;float:left;">
+        <img tabindex="1" src="../img/raju-hasan-logo.png" alt="Raju Hasan Site Logo" width="150" height="80">
+    </div>
+    <div class="search-box">
+        <div>
+            Search: <input tabindex="2" type="text"name="search"id="txtSearch" aria-label="Type text for search on hasan website" style="width:67%">
+            <input tabindex="3" type="button"value="Search"id="btnSearch" aria-label="Search Button">
+        </div>
+    </div>
+</header>
+<main style="height:500px;background-color: rosybrown">
+<section class="content" style="background-color: darkseagreen">
+    <ol id="posts-list">
+        <li style="background-color: darkolivegreen">
+            <article class="headerentry">
+                <hr style="left: 160px;height: 97px;position: absolute; margin: 0px;padding: 0px;">
+                <header>
+                    <h2 tabindex="4" aria-label="This is first post, which describe about javascript">Title place here</h2>
+                </header>
+                <footer>
+                    <img src="../img/one.png" alt="Raju Hasan Logo" width="150" height="80">
+                </footer>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et justo <a href="#">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada tellus.</p>
+                </div>
+            </article>
+        </li>
+        <li style="background-color: darkolivegreen">
+            <article class="headerentry">
+                <hr style="left: 160px;height: 97px;position: absolute; margin: 0px;padding: 0px;">
+                <header>
+                    <h2 tabindex="5" aria-label="This is second post, which describe about angularjs">Title place here</h2>
+                </header>
+                <footer>
+                    <img src="../img/one.png" alt="Raju Hasan Logo" width="150" height="80">
+                </footer>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et justo <a href="#">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada tellus.</p>
+                </div>
+            </article>
+        </li>
+    </ol>
+</section>
+<section class="content" style="height:258px;background-color: cyan">
+    <div style="width:32%;float:left;padding:5px">
+        <div class="thumbnail">
+            <div class="notification" tabindex="7" aria-label="You have new 45 facebook notification">45</div>
+            <img tabindex="6" src="../img/facebook-logo.png" alt="Facebook Inc." aria-label="Here your facebook post." width="200" height="80">
+            <div style="padding: 9px;color:#333">
+                <p><a tabindex="8" aria-label="To learn more about Windows, check out Microsoft official site" href="http://www.microsoft.com/en-us/windows" data-processed="1">Microsoft Windows</a>,
+                    <a tabindex="9" aria-label="To learn more about sharepoint, check out Sharepoint official site" href="https://products.office.com/en-us/SharePoint/" data-processed="1">SharePoint</a>,
+                    and <a tabindex="10" aria-label="To learn more about Advertising, check out Microsoft Advertising official site" href="http://advertising.microsoft.com/en/home" data-processed="1">Advertising</a>
+                    groups have been my clients on a variety of website, intranet, and extranet UX projects.</p>
+            </div>
+        </div>
+    </div>
+    <div style="width:32%;float:left;padding:5px">
+        <div class="thumbnail">
+            <div class="notification"tabindex="12"aria-label="You have new 37 National Geographic notification.">37</div>
+            <img tabindex="11" src="../img/natgeo-logo.png" alt="National Geographic Channel." width="200" height="80">
+            <div style="padding: 9px;color:#333">
+                <p><a aria-label="To learn more about Windows, check out Microsoft official site" href="http://www.microsoft.com/en-us/windows" data-processed="1">Microsoft Windows</a>,
+                    <a aria-label="To learn more about sharepoint, check out Sharepoint official site" href="https://products.office.com/en-us/SharePoint/" data-processed="1">SharePoint</a>,
+                    and <a aria-label="To learn more about Advertising, check out Microsoft Advertising official site" href="http://advertising.microsoft.com/en/home" data-processed="1">Advertising</a>
+                    groups have been my clients on a variety of website, intranet, and extranet UX projects.</p>
+            </div>
+        </div>
+    </div>
+    <div style="width:32%;float:left;padding:5px">
+        <div class="thumbnail">
+            <div class="notification"tabindex="14"aria-label="You have new 41 Microsoft notification.">41</div>
+            <img tabindex="13" src="../img/microsoft-logo.png" alt="Micropsoft Corporation." width="200" height="80">
+            <div style="padding: 9px;color:#333">
+                <p><a aria-label="To learn more about Windows, check out Microsoft official site" href="http://www.microsoft.com/en-us/windows" data-processed="1">Microsoft Windows</a>,
+                    <a aria-label="To learn more about sharepoint, check out Sharepoint official site" href="https://products.office.com/en-us/SharePoint/" data-processed="1">SharePoint</a>,
+                    and <a aria-label="To learn more about Advertising, check out Microsoft Advertising official site" href="http://advertising.microsoft.com/en/home" data-processed="1">Advertising</a>
+                    groups have been my clients on a variety of website, intranet, and extranet UX projects.</p>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<footer  style="height:50px;padding: 2px;background-color: paleturquoise">
+    <div style="width:50%;float:left;">
+        <p>&copy; Copyright 2016-
+            <script language="JavaScript" type="text/javascript">
+                now = new Date
+                theYear=now.getFullYear()
+                document.write(theYear)
+            </script>
+            Raju Hasan. All rights reserved.</p>
+    </div>
+    <div style="width:50%;float:right;text-align: right">
+        <nav style="margin:16px">
+            <a href="#"tabindex="12">HTML</a> |
+            <a href="#"tabindex="13">CSS</a> |
+            <a href="#"tabindex="14">JavaScript</a> |
+            <a href="#"tabindex="15">jQuery</a>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

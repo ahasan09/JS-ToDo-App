@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+    <title>ToDo App</title>
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
+</head>
+<body>
+    <div class="padding-10 margin-0">
+        <div id="todoDiv">
+            <div class="margin-auto width-400">
+                <div>
+                    <input type="text"name="search"id="txtSearch">
+                    <input type="button"value="Search"id="btnSearch">
+                </div>
+                <div class="padding-10 margin-b5">
+                    <input id="btnOpenModal" type="button"value="Add New">
+                    <input type="radio" name="status" value="All" checked> All
+                    <input type="radio" name="status" value="Done"> Done
+                    <input type="radio" name="status" value="Pending"> Pending
+                    <label class="margin-l50" id="lblTotal"></label>
+                </div>
+                <div id="toDoItemContainer"></div>
+            </div>
+        </div>
+    </div>
+    <div id="divToDoModal" class="modalDialog">
+        <div>
+            <div id="btnCloseModal" title="Close" class="close">X</div>
+            <h2 id="todoHeader">New ToDo</h2>
+            <div class="modalDiv padding-10 margin-b25">
+                <div class="width-25pc float-left">
+                    <div class="padding-5">Title: </div>
+                    <div class="padding-5">Description: </div>
+                </div>
+                <div class="width-75pc float-right">
+                    <div class="padding-5"><input type="text" name="Title" id="txtTitle"></div>
+                    <div class="padding-5"><input type="text" name="Description" id="txtDescription"></div>
+                    <input type="hidden" id="hdnIdInput">
+                </div>
+                <div class="clear-both"></div>
+                <div class="margin-t10 text-center">
+                    <input type="button" value="Cancel"id="btnCancel">
+                    <input type="button" value="Create" id="btnCreate">
+                </div>
+            </div>
+            <div id="lblValidationMessage"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/enum/todo-enum.js"></script>
+    <script type="text/javascript" src="../js/model/view.js"></script>
+    <script type="text/javascript" src="../js/local-storage-factory.js"></script>
+    <script type="text/javascript" src="../js/model/validation-factory.js"></script>
+    <script type="text/javascript" src="../js/model/todo-modal-factory.js"></script>
+    <script type="text/javascript" src="../js/model/todo-app-factory.js"></script>
+    <script type="text/javascript" src="../js/controller/todo-controller.js"></script>
+</body>
+</html>
